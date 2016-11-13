@@ -1,0 +1,11 @@
+api-user:
+  image: api-user:latest
+  ports:
+    - "9000:9000"
+  links:
+    - postgres
+
+postgres:
+  image: pumgrana-postgres:latest
+  volumes:
+    - /srv/data/pgsql/test:/var/lib/postgresql/data

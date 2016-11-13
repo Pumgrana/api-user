@@ -1,3 +1,3 @@
 #!/bin/bash
 
-./bin/rails server -p 9100
+./bin/rails server -b 0.0.0.0 -p 9000
