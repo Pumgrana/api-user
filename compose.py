@@ -8,8 +8,8 @@ import os, argparse
 
 def options():
     parser = argparse.ArgumentParser()
+    parser.add_argument("compose", help="compose filename")
     parser.add_argument("command", help="command name")
-    parser.add_argument("-c", "--compose", type=str, default="latest", help="compose filename")
     parser.add_argument("-p", "--project", type=str, default="api-user", help="project name")
     parser.add_argument("-d", "--directory", type=str, default="compose", help="compose directory")
     parser.add_argument("-o", "--option", nargs='+', type=str, default="", help="options")
