@@ -1,4 +1,4 @@
-PROJECT_NAME := api-user
+PROJECT_NAME := pumgrana-api-user
 REGISTRY := docker.pumgrana.com
 
 docker:

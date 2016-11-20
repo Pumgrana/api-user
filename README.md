@@ -1,4 +1,21 @@
-# README
+### Launch
+
+```
+make docker
+./compose.py latest up
+```
+available on http://localhost:9000
+
+### Restart
+
+`./compose.py latest restart`
+
+### Stop
+
+`./compose.py latest srm`  
+Shortcut for stop and rm
+
+### Without Docker
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
