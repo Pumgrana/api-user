@@ -1,9 +1,6 @@
 ### Launch
 
-```
-make docker
-./compose.py latest up
-```
+`make docker run`
 available on http://localhost:9000
 
 ### Restart

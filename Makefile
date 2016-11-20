@@ -4,6 +4,9 @@ REGISTRY := docker.pumgrana.com
 docker:
 	docker build -t $(PROJECT_NAME) .
 
+run:
+	./compose.py latest restart
+
 push:
 	docker tag $(PROJECT_NAME) $(REGISTRY)/$(PROJECT_NAME)
 	docker push $(REGISTRY)/$(PROJECT_NAME)
