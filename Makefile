@@ -1,8 +1,11 @@
-PROJECT_NAME := api-user
+PROJECT_NAME := pumgrana-api-user
 REGISTRY := docker.pumgrana.com
 
 docker:
 	docker build -t $(PROJECT_NAME) .
+
+run:
+	./compose.py latest restart
 
 push:
 	docker tag $(PROJECT_NAME) $(REGISTRY)/$(PROJECT_NAME)

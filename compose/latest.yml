@@ -1,5 +1,5 @@
 api-user:
-  image: api-user:latest
+  image: pumgrana-api-user:latest
   ports:
     - "9000:9000"
   links:
