@@ -15,7 +15,8 @@ gem 'puma', '~> 3.0'
 # gem 'bcrypt', '~> 3.1.7'
 
 # Pumgrana History
-gem 'elasticsearch', '~> 5.0'
+gem 'elasticsearch-model'
+gem 'elasticsearch-rails'
 
 # Call to Pumgrana Api User
 gem 'httparty'
