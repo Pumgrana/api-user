@@ -1,13 +1,27 @@
-require 'elasticsearch'
-require 'httparty'
+require 'elasticsearch/model'
 require 'history'
 
 class HistoryController < ActionController::API
   def show
-    History.import
+    id = params[:id]
+    history = History.find_by(id: id)
+    render json: history
+  end
 
-    response = History.search 'fox dog'
-    response.took
-    render json :response
+  def index
+    histories = History.all
+    render json: histories
+  end
+
+  def create
+    history = History.create(email: 'totot@gmail.com', url: 'www.fakeurl.fake', title: 'My Title')
+    history.save
+  end
+
+  def destroy
+    id = params[:id]
+    history = History.find_by(id: id)
+    history.destroy
+    history.save
   end
 end

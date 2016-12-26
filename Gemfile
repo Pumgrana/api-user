@@ -18,9 +18,6 @@ gem 'puma', '~> 3.0'
 gem 'elasticsearch-model'
 gem 'elasticsearch-rails'
 
-# Call to Pumgrana Api User
-gem 'httparty'
-
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
