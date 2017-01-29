@@ -14,6 +14,8 @@ Shortcut for stop and rm
 
 ### Without Docker
 
+Once the project is cloned, go to your cloned directory and type this command in your terminal `rake rails:update:bin` in order to generate bin directories that rails needs
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
