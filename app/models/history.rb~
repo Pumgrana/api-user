@@ -1,0 +1,8 @@
+require 'elasticsearch/model'
+
+class History < ApplicationRecord
+  include Elasticsearch::Model
+end
+
+History.__elasticsearch__.client = Elasticsearch::Client.new host:'172.17.0.2:9200'
+History.import force: true

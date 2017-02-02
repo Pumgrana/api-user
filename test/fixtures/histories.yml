@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  email: MyString
+  url: MyString
+  origin_url: MyString
+  target_url: MyString
+  lang: MyString
+  title: MyString
+  description: MyString
+  image: MyString
+  search: MyString
+  enter_date: 2017-02-02 18:00:45
+  leave_time: 2017-02-02 18:00:45
+  focus_elasped_time: 1.5
+  total_elasped_time: 1.5
+
+two:
+  email: MyString
+  url: MyString
+  origin_url: MyString
+  target_url: MyString
+  lang: MyString
+  title: MyString
+  description: MyString
+  image: MyString
+  search: MyString
+  enter_date: 2017-02-02 18:00:45
+  leave_time: 2017-02-02 18:00:45
+  focus_elasped_time: 1.5
+  total_elasped_time: 1.5
