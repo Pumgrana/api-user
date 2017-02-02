@@ -14,5 +14,5 @@ class History < ApplicationRecord
 end
 
 puts History.mappings.to_hash
-History.__elasticsearch__.client = Elasticsearch::Client.new host:'172.17.0.2:9200'
+History.__elasticsearch__.client = Elasticsearch::Client.new host:'elasticsearch:9200'
 History.import force: true
